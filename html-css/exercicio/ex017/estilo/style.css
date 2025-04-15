@@ -1,0 +1,145 @@
+@charset 'UTF8';
+
+@import url('https://fonts.googleapis.com/css2?family=Markazi+Text:wght@400..700&display=swap');
+
+@font-face{
+    font-family: 'Spring' ;
+    src: url(../fonte/Spring\ Rainstorm.ttf);
+}
+
+:root{
+    --cor1: #1F99BB;
+    --cor2: #307C91;
+    --cor3: #00B4E6;
+    --cor4: #335B66;
+    --cor5: #28373C;
+
+    --fonte-padrao: Verdana, Time New Roman, Arial sans serif;
+    --fonte-destaque: 'Spring', cursive;
+    --fonte-estilo: 'Markazi', cursive;
+
+
+
+}
+
+body{
+    background-color: var(--cor1);
+    
+}
+header{
+    background-image: linear-gradient(to left, var(--cor5), transparent);
+    
+}
+header h1{
+    color: white;
+    font-family: var(--fonte-destaque);
+    font-size: 3em;
+    margin: 13px 20px;
+    padding: 4px;
+    
+}
+
+header p{
+    font-family: var(--fonte-estilo);
+    background-color: white;
+    border-radius: 35px 2px;
+    padding: 20px;
+
+}
+
+nav{
+    background-color: var(--cor5);
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.192);
+    border-top-right-radius: 21px;
+    border-bottom-left-radius: 21px;
+    
+}
+
+nav > a{
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition-duration: .5;
+}
+
+nav a:hover{
+    background-color: var(--cor3);
+    color: var(--cor5);
+}
+
+main{
+    min-width: 300px;
+    max-width: 1050px;
+    margin: auto;
+    margin-bottom: 30px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.418);
+    border-bottom-left-radius:10px;
+    border-bottom-right-radius: 10px;
+    background-color: white;
+}
+main h1{
+    color: var(--cor5);
+    text-align: center;
+    background-image: linear-gradient(to right, var(--cor2), transparent);
+}
+
+main h2{
+    color: var(--cor4);
+    background-image: linear-gradient(to right, var(--cor3), transparent);
+    
+}
+
+main p{
+    margin: 15px 20px;
+    text-align: justify;
+    text-indent: 30px;
+    line-height: 2em;
+}
+main a {
+    text-decoration: none;
+    font-weight: bold;
+    background-image: linear-gradient(to bottom var(--cor5));
+    padding: 2px 6px;
+    b
+
+}
+
+main a:hover{
+    text-decoration: underline;
+    color: var(--cor4);
+
+}
+
+main ul{
+    background-color: var(--cor5);
+    color: white;
+    columns: 2;
+    line-height: 2em;
+}
+
+main > strong {
+    font-weight: bold;
+    color: var(--cor3);
+
+}
+
+h3{
+    color: white;
+    background-image: linear-gradient(to right, var(--cor4), transparent);
+    
+}
+
+footer{
+    background-color: var(--cor5);
+    color: white;
+    font-family: var(--fonte-destaque);
+    font-size: 1.5em;
+    text-align: center;
+    padding: 5px;
+}
