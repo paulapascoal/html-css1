@@ -4,14 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário</title>
+    <style>
+        body{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            
+        }
+        h1{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color: brown;
+            text-align: center;
+            font-weight: bolder;
+                       
+
+        }
+        p{
+            text-align: justify;
+            color: black
+        }
+     
+    </style>
 
 </head>
 <body>
-    <h1>Exemplo de Formulário</h1>
+    <h1>Idade</h1>
     <form action="cadastro.php" method="get">
         <p>
             <label for="iano">Em que ano você nasceu: </label>
-            <input type="number" name="ano" id="iano" min="1990" max="2025" oninput="calcIdade()" >
+            <input type="number" name="ano" id="iano" min="1990" max="2025" oninput="calcIdade()" placeholder="1990" >
 
         </p>
         <p>
@@ -20,10 +39,7 @@
         </p>
 
         
-        <p>
-            <input type="submit" value="Enviar">
-            <input type="reset" value="Limpar">
-        </p>
+       
     </form>
     <script>
         function calcIdade(){
