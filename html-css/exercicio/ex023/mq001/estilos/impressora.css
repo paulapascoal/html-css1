@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+/*Estilo para impressora*/
+
+*{
+    margin: 10px;
+    padding: 10px;
+}
+
+html{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1em;
+    line-height: 1.5em;
+}
+
+menu{
+    display: none;
+}
+
+article::after{
+    content: 'Esse artigo foi impreso através do site www.paulapascoal.github.io/html-css1/html';
+    text-align: center;
+    font-weight: bolder;
+}
+
+article{
+    width: 100%;
+}
